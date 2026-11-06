@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Date | Regina & Marcus</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#6b82a8',
+                            light: '#eef3f8',
+                            dark: '#1e304f',
+                            navy: '#2b456e',
+                            accent: '#8ba2c4',
+                            softBg: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Animações e ajustes de design refinado */
+        .polaroid-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .pulse-subtle {
+            animation: pulse-slow 3s infinite ease-in-out;
+        }
+        
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.08); opacity: 0.85; }
+        }
+
+        /* Molduras Polaroid customizadas */
+        .polaroid {
+            background: white;
+            padding: 12px 12px 35px 12px;
+            transition: all 0.4s ease;
+        }
+        
+        .polaroid:hover {
+            transform: scale(1.03) rotate(0deg) !important;
+            z-index: 20;
+        }
+
+        /* SVG Folhas Botânicas Suaves */
+        .bg-leaves {
+            background-image: radial-gradient(#6b82a8 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-brand-blue selection:text-white">
+
+    <!-- Elementos Botânicos Decorativos de Fundo -->
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0 opacity-40">
+        <!-- Ramo Floral Superior Esquerdo -->
+        <svg class="absolute -top-12 -left-12 w-64 md:w-96 text-brand-blue" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 180 C 60 140, 100 90, 150 20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2,2"/>
+            <path d="M50 150 C 40 120, 70 120, 50 150 M70 130 C 80 100, 100 110, 70 130 M100 100 C 90 70, 120 70, 100 100 M120 80 C 130 50, 150 60, 120 80" stroke="currentColor" stroke-width="1.2" fill="none"/>
+            <circle cx="50" cy="135" r="8" fill="currentColor" opacity="0.2"/>
+            <circle cx="85" cy="115" r="10" fill="currentColor" opacity="0.15"/>
+            <circle cx="110" cy="85" r="7" fill="currentColor" opacity="0.2"/>
+        </svg>
+
+        <!-- Ramo Floral Inferior Direito -->
+        <svg class="absolute -bottom-16 -right-16 w-72 md:w-96 text-brand-blue transform rotate-180" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 180 C 60 140, 100 90, 150 20" stroke="currentColor" stroke-width="1.5"/>
+            <ellipse cx="60" cy="140" rx="12" ry="6" transform="rotate(-30 60 140)" fill="currentColor" opacity="0.25"/>
+            <ellipse cx="90" cy="110" rx="14" ry="7" transform="rotate(20 90 110)" fill="currentColor" opacity="0.2"/>
+            <ellipse cx="120" cy="70" rx="10" ry="5" transform="rotate(-40 120 70)" fill="currentColor" opacity="0.25"/>
+        </svg>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="relative z-10 max-w-5xl mx-auto px-4 py-8 md:py-14 w-full flex-grow flex flex-col justify-center">
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+            
+            <!-- Lado Esquerdo: Fotos Polaroid Entrelançadas -->
+            <div class="md:col-span-6 flex justify-center items-center relative py-6 md:py-10">
+                
+                <!-- Ilustração Botânica Atrás das Fotos -->
+                <div class="absolute -top-6 left-4 md:left-10 text-brand-accent opacity-60 pointer-events-none">
+                    <svg width="140" height="140" viewBox="0 0 100 100" fill="none">
+                        <path d="M50,10 Q65,30 50,50 Q35,70 50,90 M50,30 Q80,20 70,40 M50,50 Q20,40 30,60 M50,70 Q80,60 70,80" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                
+                <!-- Foto 1 (Topo / Esquerda) -->
+                <div class="polaroid polaroid-shadow rounded-sm transform -rotate-6 -mr-8 z-10 w-48 sm:w-60 md:w-64 border border-slate-100">
+                    <div class="aspect-[4/3] bg-slate-200 overflow-hidden relative">
+                        <!-- Imagem do Casal (Foto 1 do Vídeo) -->
+                        <svg class="w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#7aa5d6"/>
+                                    <stop offset="60%" stop-color="#bce0fd"/>
+                                    <stop offset="100%" stop-color="#e3f2fd"/>
+                                </linearGradient>
+                                <linearGradient id="skin1" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#f5cbb7"/>
+                                    <stop offset="100%" stop-color="#e5b49e"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Fundo de Praia / Céu Iluminado -->
+                            <rect width="400" height="300" fill="url(#sky1)"/>
+                            <!-- Nuvem/Luz -->
+                            <ellipse cx="320" cy="80" rx="90" ry="40" fill="#ffffff" opacity="0.4"/>
+                            
+                            <!-- Marcus (Lado Esquerdo) -->
+                            <path d="M70,300 C70,220 100,160 170,160 C210,160 230,210 230,300 Z" fill="#2d3748"/>
+                            <circle cx="150" cy="120" r="45" fill="url(#skin1)"/>
+                            <!-- Boné Escuro e Óculos -->
+                            <path d="M105,105 C115,80 175,80 195,105 L205,115 L100,115 Z" fill="#1a202c"/>
+                            <path d="M125,120 Q150,115 175,120 L172,135 Q150,140 128,135 Z" fill="#111827" opacity="0.9"/>
+                            
+                            <!-- Regina (Lado Direito - Oculos escuros e Boné) -->
+                            <path d="M180,300 C180,210 230,170 300,170 C350,170 370,230 370,300 Z" fill="#312e81"/>
+                            <circle cx="265" cy="130" r="42" fill="url(#skin1)"/>
+                            <!-- Cabelos da Regina -->
+                            <path d="M215,120 C210,180 230,240 240,270 M305,120 C320,180 325,240 330,270" stroke="#271c19" stroke-width="22" stroke-linecap="round"/>
+                            <!-- Boné Regina Escuro -->
+                            <path d="M225,115 C235,90 295,90 310,115 L320,122 L220,122 Z" fill="#1e293b"/>
+                            <!-- Óculos de Sol Grandes da Regina -->
+                            <rect x="235" y="125" width="28" height="20" rx="4" fill="#0f172a"/>
+                            <rect x="268" y="125" width="28" height="20" rx="4" fill="#0f172a"/>
+                            <line x1="263" y1="133" x2="268" y2="133" stroke="#0f172a" stroke-width="3"/>
+                            <!-- Sorriso -->
+                            <path d="M250,160 Q265,170 280,160" stroke="#be123c" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Foto 2 (Base / Direita) -->
+                <div class="polaroid polaroid-shadow rounded-sm transform rotate-6 mt-12 sm:mt-16 z-0 w-48 sm:w-60 md:w-64 border border-slate-100">
+                    <div class="aspect-[4/3] bg-slate-200 overflow-hidden relative">
+                        <!-- Imagem do Casal (Foto 2 do Vídeo na Praia) -->
+                        <svg class="w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="beachSky" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#93c5fd"/>
+                                    <stop offset="65%" stop-color="#e0f2fe"/>
+                                    <stop offset="100%" stop-color="#fef3c7"/>
+                                </linearGradient>
+                                <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0">
+                                    <stop offset="0%" stop-color="#0284c7"/>
+                                    <stop offset="100%" stop-color="#38bdf8"/>
+                                </linearGradient>
+                                <linearGradient id="skin2" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#f8d7c4"/>
+                                    <stop offset="100%" stop-color="#e2a88c"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Fundo Praia com Mar -->
+                            <rect width="400" height="300" fill="url(#beachSky)"/>
+                            <rect y="160" width="400" height="70" fill="url(#sea)" opacity="0.6"/>
+                            <path d="M0,220 Q200,205 400,220 L400,300 L0,300 Z" fill="#fde68a" opacity="0.7"/>
+
+                            <!-- Marcus (Esq - Regata preta / Oculos escuros) -->
+                            <path d="M60,300 C60,210 100,160 160,160 C210,160 230,220 230,300 Z" fill="#0f172a"/>
+                            <circle cx="145" cy="120" r="42" fill="url(#skin2)"/>
+                            <!-- Cabelo curto Marcus -->
+                            <path d="M110,110 C110,85 180,85 180,110 Z" fill="#332211"/>
+                            <!-- Óculos de sol Marcus -->
+                            <rect x="120" y="115" width="22" height="15" rx="3" fill="#1e293b"/>
+                            <rect x="146" y="115" width="22" height="15" rx="3" fill="#1e293b"/>
+                            <line x1="142" y1="120" x2="146" y2="120" stroke="#1e293b" stroke-width="2"/>
+                            
+                            <!-- Regina (Dir - Sorrindo de Viseira/Boné) -->
+                            <path d="M190,300 C190,200 240,165 310,165 C360,165 380,220 380,300 Z" fill="#0284c7"/>
+                            <circle cx="270" cy="125" r="40" fill="url(#skin2)"/>
+                            <!-- Viseira / Boné Regina -->
+                            <path d="M230,105 C240,85 300,85 315,105 L330,112 L225,112 Z" fill="#1e293b"/>
+                            <!-- Cabelos Longos Soltos Regina -->
+                            <path d="M225,120 C220,170 235,230 245,280 M315,120 C330,170 340,230 350,280" stroke="#1a0f0a" stroke-width="20" stroke-linecap="round"/>
+                            <!-- Óculos de Sol Regina -->
+                            <rect x="242" y="120" width="24" height="17" rx="3" fill="#0f172a"/>
+                            <rect x="272" y="120" width="24" height="17" rx="3" fill="#0f172a"/>
+                            <line x1="266" y1="127" x2="272" y2="127" stroke="#0f172a" stroke-width="2"/>
+                            <!-- Sorriso Radiante -->
+                            <path d="M255,152 Q270,164 285,152" stroke="#be123c" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Segunda Ilustração Botânica Suave -->
+                <div class="absolute -bottom-4 left-6 text-brand-blue opacity-40 pointer-events-none">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                        <path d="M10,90 C30,70 40,40 90,10 M30,75 C20,55 45,55 30,75 M60,45 C50,25 75,25 60,45" stroke="currentColor" stroke-width="1" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Lado Direito: Informações do Casamento -->
+            <div class="md:col-span-6 text-center md:text-left space-y-4 md:space-y-6">
+                
+                <!-- Subtítulo Save the Date -->
+                <div class="tracking-[0.25em] text-brand-blue font-medium text-xs sm:text-sm uppercase font-sans flex items-center justify-center md:justify-start gap-3">
+                    <span class="w-8 h-[1px] bg-brand-blue opacity-50 hidden sm:inline-block"></span>
+                    <span>Save The Date</span>
+                    <span class="w-8 h-[1px] bg-brand-blue opacity-50 hidden sm:inline-block"></span>
+                </div>
+
+                <!-- Nomes do Casal -->
+                <div class="py-2">
+                    <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl text-slate-800 leading-tight">
+                        Regina
+                    </h1>
+                    
+                    <div class="my-2 flex items-center justify-center md:justify-start gap-2">
+                        <span class="text-brand-blue text-xl sm:text-2xl pulse-subtle">♥</span>
+                    </div>
+                    
+                    <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl text-slate-800 leading-tight">
+                        Marcus
+                    </h1>
+                </div>
+
+                <!-- Data e Local -->
+                <div class="pt-2 pb-4 space-y-3">
+                    <!-- Data em Destaque -->
+                    <div class="inline-block bg-brand-blue text-white font-sans text-xs sm:text-sm font-medium px-5 py-2 rounded-md tracking-widest shadow-sm">
+                        12 DE DEZEMBRO DE 2026
+                    </div>
+                    
+                    <!-- Localização -->
+                    <div class="text-slate-500 font-serif italic text-lg sm:text-xl flex items-center justify-center md:justify-start gap-2">
+                        <i class="fa-solid fa-location-dot text-brand-blue text-sm not-italic"></i>
+                        <span>Paraná</span>
+                    </div>
+                </div>
+
+                <!-- Botão Adicionar ao Calendário -->
+                <div class="pt-2">
+                    <a id="btn-calendar" 
+                       href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Casamento+Regina+%26+Marcus&dates=20261212T170000/20261212T235900&details=Guarde+esta+data!+Casamento+de+Regina+e+Marcus.&location=Paran%C3%A1" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-slate-600 hover:text-brand-navy border border-slate-300 hover:border-brand-blue bg-white/80 backdrop-blur-sm px-4 py-2.5 rounded-full transition-all shadow-xs hover:shadow-md">
+                        <i class="fa-regular fa-calendar-plus text-brand-blue"></i>
+                        <span>Adicionar à Agenda</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bloco Inferior: Contagem Regressiva em Destaque Azul -->
+    <footer class="relative z-10 w-full bg-brand-navy text-white pt-8 pb-10 px-4 mt-8 shadow-inner">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            
+            <h2 class="text-xs sm:text-sm uppercase tracking-[0.3em] text-blue-200 font-medium">
+                Contagem Regressiva
+            </h2>
+
+            <!-- Cards do Timer -->
+            <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-lg mx-auto">
+                <!-- Dias -->
+                <div class="bg-white/15 backdrop-blur-md border border-white/20 rounded-xl p-2.5 sm:p-4 flex flex-col items-center justify-center shadow-lg">
+                    <span id="days" class="font-sans font-bold text-2xl sm:text-4xl text-white tracking-tight">00</span>
+                    <span class="text-[9px] sm:text-xs tracking-widest text-blue-200 uppercase mt-1">Dias</span>
+                </div>
+
+                <!-- Horas -->
+                <div class="bg-white/15 backdrop-blur-md border border-white/20 rounded-xl p-2.5 sm:p-4 flex flex-col items-center justify-center shadow-lg">
+                    <span id="hours" class="font-sans font-bold text-2xl sm:text-4xl text-white tracking-tight">00</span>
+                    <span class="text-[9px] sm:text-xs tracking-widest text-blue-200 uppercase mt-1">Horas</span>
+                </div>
+
+                <!-- Minutos -->
+                <div class="bg-white/15 backdrop-blur-md border border-white/20 rounded-xl p-2.5 sm:p-4 flex flex-col items-center justify-center shadow-lg">
+                    <span id="minutes" class="font-sans font-bold text-2xl sm:text-4xl text-white tracking-tight">00</span>
+                    <span class="text-[9px] sm:text-xs tracking-widest text-blue-200 uppercase mt-1">Minutos</span>
+                </div>
+
+                <!-- Segundos -->
+                <div class="bg-white/15 backdrop-blur-md border border-white/20 rounded-xl p-2.5 sm:p-4 flex flex-col items-center justify-center shadow-lg">
+                    <span id="seconds" class="font-sans font-bold text-2xl sm:text-4xl text-white tracking-tight">00</span>
+                    <span class="text-[9px] sm:text-xs tracking-widest text-blue-200 uppercase mt-1">Segundos</span>
+                </div>
+            </div>
+
+            <p class="text-xs text-blue-200/70 font-light pt-2">
+                Esperamos por você neste dia inesquecível!
+            </p>
+        </div>
+    </footer>
+
+    <!-- Lógica JavaScript da Contagem Regressiva -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Data do casamento: 12 de Dezembro de 2026 às 17:00 (Ajuste a hora se necessário)
+            const targetDate = new Date('December 12, 2026 17:00:00').getTime();
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const difference = targetDate - now;
+
+                if (difference > 0) {
+                    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                    // Atualiza o DOM com zeros à esquerda
+                    document.getElementById('days').innerText = String(days).padStart(2, '0');
+                    document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+                    document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+                    document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+                } else {
+                    // Mensagem após o evento atingir a data
+                    document.getElementById('days').innerText = '00';
+                    document.getElementById('hours').innerText = '00';
+                    document.getElementById('minutes').innerText = '00';
+                    document.getElementById('seconds').innerText = '00';
+                }
+            }
+
+            // Atualização inicial e intervalo contínuo de 1 segundo
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        });
+    </script>
+</body>
+</html>
